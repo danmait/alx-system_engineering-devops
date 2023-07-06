@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -1a | grep -v '^\.$' | grep -v '^\.\.$' | sed -e 's/$/,/' | tr -d '\n' && echo
